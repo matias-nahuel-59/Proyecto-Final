@@ -1,0 +1,32 @@
+%flex-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+%flex-center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+%flex-footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+%flex-flex {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+%flex-reverse {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-around;
+}

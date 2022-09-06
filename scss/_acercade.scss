@@ -1,0 +1,99 @@
+.acerca-de {
+    max-width: 100%;
+    text-align: center;
+
+    h1 {
+        font-size: 100px;
+        font-family: 'Bebas Neue';
+        color: #e43a19;
+        background-image: url(../img/saga-futuro.jpg);
+        background-size: cover;
+        background-position: 50% 50%;
+        width: 100%;
+        height: 90vh;
+        @extend %flex-footer;
+    }
+
+    div {
+        padding: 20px;
+        margin-bottom: 22px;
+
+
+        h2 {
+            font-family: 'Bebas Neue';
+            color: $color-negro;
+        }
+
+        p {
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+
+        img {
+            object-fit: cover;
+            width: 800px;
+            height: 90vh;
+        }
+    }
+}
+
+@media screen and (max-width: 440px) {
+    .acerca-de {
+        h1 {
+            font-size: 60px;
+            height: 46vh;
+        }
+    }
+}
+
+.mision {
+    @extend %flex-flex;
+}
+
+.vision {
+    @extend %flex-reverse;
+}
+
+.objetivos {
+    @extend %flex-flex;
+}
+
+.nuestro-sitio {
+    @extend %flex-reverse;
+}
+
+@media screen and (max-width:1200px) {
+    .acerca-de {
+        div {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+}
+
+@media screen and (max-width:710px) {
+    .acerca-de {
+        h1 {
+            font-size: 50px;
+        }
+
+    }
+
+    .acerca-de {
+        div {
+            p {
+                margin-left: 20px;
+                margin-right: 20px;
+            }
+
+            img {
+                padding-left: 20px;
+                padding-right: 20px;
+                width: 500px;
+                height: 35vh;
+            }
+        }
+    }
+
+
+}
